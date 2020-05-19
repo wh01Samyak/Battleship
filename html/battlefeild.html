@@ -8,26 +8,40 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="../js/battlefeild.js"></script>
 	<script type="text/javascript">
-            window.onload = function() {
-                var table = document.getElementById("feild");
-                for( var i = 0; i < 10; i++ ){
-                    var row = document.createElement("tr");
-                    for( var j = 0; j < 10; j++ ){
-                        var col = document.createElement("td");
-                        col.innerHTML = ''; 
-                        row.appendChild(col);
-                    }
-                    table.appendChild(row);
-                }
-            };
-        </script>
+		console.log("hello");
+		window.onload = function() {
+			var table = document.getElementById("our-feild");
+			for( var i = 0; i < 10; i++ ){
+				var row = document.createElement("tr");
+				for( var j = 0; j < 10; j++ ){
+					var col = document.createElement("td");
+					col.innerHTML = ''; 
+					row.appendChild(col);
+				}
+				table.appendChild(row);
+			}
+			var table1 = document.getElementById("opponent-feild");
+			for( var i = 0; i < 10; i++ ){
+				var row = document.createElement("tr");
+				for( var j = 0; j < 10; j++ ){
+					var col = document.createElement("td");
+					col.innerHTML = ''; 
+					row.appendChild(col);
+				}
+				table1.appendChild(row);
+			}
+		};
+	</script>
 </head>
 <body>
 	<div class="header">
 		<h1>Battleship</h1>
 	</div>
 	<div class="content">
-		<table id="feild"></table>
+		<div id="gameboard" style="width: 800px">
+			<table id="our-feild" style="float:left"></table>
+			<table id="opponent-feild" style="float:right"></table>
+		</div>
 	</div>
 	<div class="footer">
 		<p>Made with love by Samyak Bagra.<i class="fa fa-heart"></i></p>

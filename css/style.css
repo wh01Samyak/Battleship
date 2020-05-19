@@ -6,3 +6,7 @@ tr, td {
 	width: 30px;
 	height: 30px;
 }
+
+td:hover {
+	background-color: yellow;
+}
