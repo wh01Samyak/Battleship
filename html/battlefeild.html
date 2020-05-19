@@ -3,16 +3,31 @@
 <head>
 	<title>Battleship</title>
 	<link rel="battleship icon" href="../assets/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="../js/battlefeild.js"></script>
+	<script type="text/javascript">
+            window.onload = function() {
+                var table = document.getElementById("feild");
+                for( var i = 0; i < 10; i++ ){
+                    var row = document.createElement("tr");
+                    for( var j = 0; j < 10; j++ ){
+                        var col = document.createElement("td");
+                        col.innerHTML = ''; 
+                        row.appendChild(col);
+                    }
+                    table.appendChild(row);
+                }
+            };
+        </script>
 </head>
 <body>
 	<div class="header">
 		<h1>Battleship</h1>
 	</div>
 	<div class="content">
-		<p>Create a room</p>
-		<button type="button">Classic</button> 
-		<button type="button">Russian</button> 
+		<table id="feild"></table>
 	</div>
 	<div class="footer">
 		<p>Made with love by Samyak Bagra.<i class="fa fa-heart"></i></p>
