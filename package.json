@@ -1,0 +1,26 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "A multiplayer battleship game",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wh01Samyak/Battleship.git"
+  },
+  "keywords": [
+    "mean"
+  ],
+  "author": "wh01Samyak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wh01Samyak/Battleship/issues"
+  },
+  "homepage": "https://github.com/wh01Samyak/Battleship#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.7"
+  }
+}
